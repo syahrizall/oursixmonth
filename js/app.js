@@ -108,7 +108,7 @@ const APP_CONTENT = {
     {
       id: 'memory-6',
       title: 'Ngopi di Coffee Shop',
-      image: 'assets/images/ngopi1.jpg',
+      image: 'assets/images/image.jpg',
       hasImage: true,
       story: [
         'Coffee shop di Jakarta. Aku grogi, kamu banyak ngomong haha tanpa beban dan akhirnya aku terpancing untuk banyak cerita. Aku merasa didengar.',
