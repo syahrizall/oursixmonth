@@ -2,6 +2,33 @@
    Our First Six Months — Application
    ============================================ */
 
+const GALLERY_INTROS = {
+  compilation: {
+    steps: [{
+      type: 'splash',
+      title: 'Our First Six Months',
+      text: 'Sengaja ga di edit, tapi semoga suka ya.',
+      button: 'Putar'
+    }]
+  },
+  edited: {
+    steps: [{
+      type: 'splash',
+      title: 'I Love You All About You',
+      text: 'Sesuai judul, video ini semua tentang kamu. Tapi sebenernya semua tentang kita.',
+      button: 'Putar'
+    }]
+  },
+  finale: {
+    steps: [{
+      type: 'splash',
+      title: 'Video yang paling aku suka',
+      text: 'No word can describe how feel i am when i watch this video',
+      button: 'Lihat Video'
+    }]
+  }
+};
+
 const APP_CONTENT = {
   opening: {
     title: 'Our First Six Months',
@@ -20,17 +47,17 @@ const APP_CONTENT = {
   chapter1: {
     label: 'Chapter One',
     title: 'How It All Started',
-    lead: 'Awalnya cuma main game bareng. Lucu kalau diinget sekarang — tapi dari situ, pelan-pelan, kita saling kenal.',
-    mainImage: 'assets/images/Mirror Selfie.jpg',
+    lead: 'Awalnya sih cuma mabar ya. Lucu juga sih kalo diinget sekarang — tapi dari situ, pelan-pelan, kita saling kenal satu sama lain.',
+    mainImage: 'assets/images/Ngopi.jpg',
     supportingImages: [
       'assets/images/support-1.jpg',
     ],
     paragraphs: [
-      'Teleponan in-game, obrolan kecil, hari demi hari. Dari TikTok ke Discord, lalu WhatsApp — setiap langkah terasa natural. Let it flow. No pressure.',
-      'Aku tidak tahu kapan kamu mulai terasa beda. Mungkin saat kamu benar-benar mendengarkan — bukan menunggu giliran bicara. Di situ aku merasa aman.',
-      '"Pake sunscreen. Skincare. Kalo bohong tertimpa musibah, hahaha." Candamu selalu ngena. Di balik itu, aku tahu kamu peduli.',
-      'Kamu pernah minta maaf berkali-kali — karena membawaku masuk saat titik terendahmu. Tapi yang kurasakan bukan beban. Itu kepercayaan. Kamu membiarkanku ada di sisi terlemahmu.',
-      'Enam bulan kita dimulai dari hal-hal sederhana. Game, obrolan, langkah kecil — yang ternyata membawa kita ke sini.'
+      'Sleepcall di game, obrolan kecil, hari demi hari. Mulai chattingan di TikTok terus ke Discord, baru ke WhatsApp hahahaha — setiap langkah terasa natural. Let it flow. No pressure.',
+      'Aku gatau kapan kamu mulai kerasa beda. Mungkin saat kamu benar-benar dengerin aku — bukan nunggu giliran ngomong. Di situ aku ngerasa aman.',
+      '"Pake sunscreen. Skincare. Kalo bohong tertimpa musibah, hahaha." Candanya selalu ngena sih. Di balik itu, aku tau kamu peduli.',
+      'Kamu sempet minta maaf berkali-kali — karena ngebawa aku masuk pas kamu lagi di titik terendah. Tapi yang kurasa bukan beban. Itu kepercayaan. Kamu tetap biarin aku ada di sisi terlemahmu.',
+      'Enam bulan kita mulai dari hal-hal sederhana aja. Game, obrolan, langkah kecil — yang ternyata bawa kita ke sini.'
     ]
   },
 
@@ -111,11 +138,42 @@ const APP_CONTENT = {
       image: 'assets/images/image.jpg',
       hasImage: true,
       story: [
-        'Coffee shop di Jakarta. Aku grogi, kamu banyak ngomong haha tanpa beban dan akhirnya aku terpancing untuk banyak cerita. Aku merasa didengar.',
+        'Pas ngopi saat itu, seringnya aku grogi, kamu sangat antusias bercerita, tanpa beban dan hal itu juga yang bikin aku terpancing untuk banyak cerita. Aku ngerasa didengar.',
         'Ada foto kamu melihat ke arahku — setiap kali kulihat, aku tersenyum. Ntahlah saat itu kamu mikir apa, hahaha.'
       ]
     }
   ],
+
+  gallery: {
+    label: 'Interlude',
+    title: 'Little Snapshots',
+    hint: 'Ketuk untuk lihat lebih besar',
+    videoVolume: 0.5,
+    photos: [
+      { type: 'video', src: 'assets/images/all video.mp4', alt: 'Semua momen kita', featured: true, introKey: 'compilation' },
+
+      { src: 'assets/images/Di Travel.jpg', alt: 'Di Travel' },
+      { src: 'assets/images/Gantungan 1.jpg', alt: 'Gantungan' },
+      { src: 'assets/images/kocak.jpeg', alt: 'Kocak' },
+      { src: 'assets/images/menatap.jpg', alt: 'Menatap' },
+      { src: 'assets/images/Ngopi Sip.JPG', alt: 'Ngopi sip' },
+      { src: 'assets/images/Ngopi.jpg', alt: 'Ngopi' },
+      { src: 'assets/images/Renang.jpg', alt: 'Renang' },
+      { src: 'assets/images/Sip.jpg', alt: 'Sip' },
+      { src: 'assets/images/Sycho.PNG', alt: 'Sycho' },
+      { src: 'assets/images/Tidur.jpeg', alt: 'Tidur' },
+
+      { type: 'video', src: 'assets/images/Baru Bangun.mp4', alt: 'Baru bangun' },
+      { type: 'video', src: 'assets/images/Baru Bangun 2.mp4', alt: 'Baru bangun 2' },
+      { type: 'video', src: 'assets/images/Bingung.mp4', alt: 'Bingung' },
+      { type: 'video', src: 'assets/images/Ngops Awal.mp4', alt: 'Ngopi awal' },
+      { type: 'video', src: 'assets/images/Nongs.mp4', alt: 'Nongs' },
+      { type: 'video', src: 'assets/images/With Santa.mp4', alt: 'With Santa' },
+      { type: 'video', src: 'assets/images/edit video.mp4', alt: 'Video hasil edit', introKey: 'edited' },
+
+      { type: 'video', src: 'assets/images/I Love You.mp4', alt: 'I love you', finale: true, introKey: 'finale' }
+    ]
+  },
 
   qualities: [
     {
@@ -123,32 +181,32 @@ const APP_CONTENT = {
       title: 'Your Little Reminders',
       preview: 'Sunscreen, istirahat, makan — kamu selalu ingatkan.',
       letter: [
-        'Ntah kamu sadar atau tidak, tapi caramu mengingatkan aku menjaga diri selalu membuatku merasa diperhatikan.',
-        '"Pake sunscreen. Jangan lupa makan." Sederhana — tapi aku tidak pernah bosan merasa begitu.'
+        'Ntah kamu sadar atau ngga, tapi caramu mengingatkan aku menjaga diri selalu membuatku merasa diperhatikan.',
+        '"Pake sunscreen. Jangan lupa makan." Sederhana — tapi aku selalu senang saat merasa diperhatikan.'
       ]
     },
     {
       id: 'quality-2',
       title: 'A Part of My Everyday',
-      preview: 'Lagu, cerita, hal kecil — sering bikin aku ingat kamu.',
+      preview: 'Lagu, cerita, hal kecil — sering bikin aku inget kamu.',
       letter: [
-        'Aku tidak tahu kapan mulainya. Tapi sekarang, banyak hal sehari-hari bikin aku ingat kamu.',
-        'Tanpa sadar, kamu sudah jadi bagian dari hari-hariku. Dan itu hal yang tidak pernah kuminta — tapi sangat menyenangkan.'
+        'Aku gatau kapan mulainya. Tapi sekarang, banyak hal sehari-hari bikin aku ingat kamu.',
+        'Tanpa sadar, kamu sudah jadi bagian dari hari-hariku. Dan itu hal yang tidak pernah kuingin — tapi sangat menyenangkan.'
       ]
     },
     {
       id: 'quality-3',
       title: 'The First Person I Want To Tell',
-      preview: 'Kabar baik, kabar biasa — yang pertama kuingin ceritain selalu kamu.',
+      preview: 'Kabar baik, kabar biasa — orang pertama yang ingin aku ceritakan selalu kamu.',
       letter: [
-        'Ada satu orang yang selalu pertama kuingin ceritakan — entah itu penting atau sepele.',
+        'Ada satu orang yang selalu pertama kuingin ceritain — entah itu penting atau sepele.',
         'Orang itu kamu. Karena setiap cerita terasa lebih hidup kalau bisa kubagi sama kamu.'
       ]
     },
     {
       id: 'quality-4',
       title: 'Your Terrible Sense of Timing',
-      preview: 'Tertawa di saat paling tidak tepat — dan aku ntahlah kadang aku bingung.',
+      preview: 'Tertawa di saat paling tidak tepat — dan ntahlah, kadang aku bingung.',
       letter: [
         'Saat aku berusaha serius, kamu malah ketawa. Jujur sebenarnya aku bingung kenapa kamu tertawa.',
         'Mungkin timing-mu jelek, hahaha. Tapi justru itu yang bikin banyak momen kita susah dilupakan.'
@@ -156,27 +214,26 @@ const APP_CONTENT = {
     },
     {
       id: 'quality-5',
-      title: 'Your Kind of Care',
-      preview: 'Perhatian kecil yang jarang disadari — tapi selalu terasa.',
-      letter: [
-        'Kamu peduli dengan cara yang tidak mencolok. Tanya kabar, ingat hal kecil, pastikan semuanya baik.',
-        'Itu yang paling kukagumi darimu. Bukan kata-kata besar — tapi konsistensi hal-hal kecil.'
-      ]
-    },
-    {
-      id: 'quality-6',
       title: 'How You Treat Me Like a "Baby"',
       preview: 'Dirawat, diingatkan, dibiarkan lemah sebentar — dan itu membuatku aman.',
       letter: [
         'Kadang kamu memperlakukanku seperti aku masih kecil. Lucu? Iya. Tapi itu yang paling kurindukan.',
-        'Di dunia yang minta kita kuat terus, punya kamu yang memperlakukan dengan lembut — itu salah satu hal terindah yang pernah kuterima.'
+        'Di dunia yang minta kita kuat terus, punya kamu yang memperlakukan dengan lembut — itu salah satu hal yang paling aku suka.'
+      ]
+    }, {
+      id: 'quality-6',
+      title: 'All of You',
+      preview: 'Kelebihan, kekurangan — aku suka semuanya.',
+      letter: [
+        'Jujur, aku suka banyak hal dari kamu. Cara kamu peduli, cara kamu hadir, cara kamu bikin aku ketawa di saat yang salah — semuanya kecampur jadi satu.',
+        'Dan yang paling aku syukuri: aku nggak cuma suka bagian yang "bagus" aja. Kelebihanmu, kekuranganmu, semua itu kamu. Aku nggak minta versi terbaikmu aja — aku mau kamu, bersamamu, apa adanya.'
       ]
     }
   ],
 
   reflection: {
     label: 'Chapter Four',
-    title: 'What These Six Months Mean To Me',
+    title: 'What These Six Months Mean to Me',
     paragraphs: [
       'Enam bulan. Angkanya tidak panjang — tapi setiap harinya benar-benar kurasakan. Aku berubah: mulai lihat potensi diriku, belajar terima perbedaan kita, dan sadar justru itu yang bikin aku tau akan penerimaan.',
       'Pelajaran terbesarnya? Tidak perlu sama, tidak perlu selalu sepakat. Cukup saling mengerti — dan itu sudah lebih dari cukup.',
@@ -189,8 +246,8 @@ const APP_CONTENT = {
     title: 'The Chapters We Haven\'t Written Yet',
     backgroundImage: 'assets/images/chapter5-bg.jpg',
     paragraphs: [
-      'Bukannya tidak memiliki rencana besar — hanya harapan tenang: jadi tempat ternyaman dan teraman buat kamu.',
-      'Ngopi bareng, liatin kamu bercerita, jadi aku ingin itu terus ada. Jadi tolong, jaga kesehatanmu ya — biar kita bisa ngopi bareng terus.',
+      'Bukannya tidak memiliki rencana besar — hanya harapan tenang: jadi tempat yang nyaman dan aman buat kamu.',
+      'Ngopi bareng, liat kamu cerita, jadi aku ingin itu terus ada. Jadi tolong, jaga kesehatanmu ya — biar kita bisa lakukan hal itu terus.',
       'Aku tidak tahu bab berikutnya seperti apa. Tapi aku menantikannya — dengan hati yang tenang.'
     ]
   },
@@ -198,24 +255,24 @@ const APP_CONTENT = {
   ending: {
     thankYou: 'Thank You.',
     lines: [
-      'For every cup of coffee we shared.',
-      'For every sunset on the rooftop.',
-      'For every moment you made me feel at home.',
-      'And for these six months that truly changed me.'
+      'For the letter in the hamper — formal, funny, and the sweetest way to say hello.',
+      'For your coffee, our sunsets on the rooftop, and every cup we shared along the way.',
+      'For every welcome when I arrived, every night you stayed when I was sick, and every time you truly listened.',
+      'For all of you — the strengths, the flaws, and six months I didn\'t just live through. I felt them. And they changed me to be better.'
     ],
     buttonText: 'Open My Last Letter'
   },
 
   finalLetter: {
     label: 'A Letter For You',
-    greeting: 'Untuk Nanun — yang telah menjadi bagian terindah dari enam bulan terakhirku,',
+    greeting: 'Untuk Nanun — yang udah jadi bagian terindah dari enam bulan terakhir Ijal,',
     paragraphs: [
-      'Ijal nulis ini dengan perasaan yang sulit Ijal jelasin. Bukan karena ga ada kata yang tepat — tapi karena ada terlalu banyak, dan tidak ada yang terasa cukup.',
-      'Maaf, ya — kalau ada hal di mana Ijal belum cukup baik, belum cukup hadir, atau belum cukup menjadi yang nanun butuhin. Ijal tahu Ijal masih belajar. Tapi setiap hari, Ijal mencoba menjadi lebih baik untuk Nanun.',
+      'Ijal nulis ini dengan perasaan yang sulit Ijal jelasin. Bukan karena ga ada kata yang tepat — tapi karena terlalu banyak hal yang ingin Ijal sampaikan.',
+      'Maaf, ya — kalau ada hal di mana Ijal belum cukup baik, belum cukup hadir, atau belum cukup menjadi yang Nanun butuhkan. Ijal tahu Ijal masih belajar. Tapi setiap hari, Ijal mencoba menjadi lebih baik untuk Nanun.',
       'Terima kasih sudah ada. Terima kasih sudah mendengarkan. Terima kasih sudah membiarkan Ijal masuk ke hidup Nanun — bahkan di saat-saat tersulit Nanun. Terima kasih sudah mempercayai Ijal, meski Ijal tahu itu tidak selalu mudah.',
       'Enam bulan ini bukan waktu yang Ijal lewati begitu aja. Setiap momennya benar-benar Ijal rasain. Dan Ijal bersyukur — sangat bersyukur — bahwa Nanun ada di dalamnya.',
       'Ijal ingin kita saling menguatkan. Bukan hanya Ijal yang didukung, bukan hanya Ijal yang merasa aman — tapi kita berdua. Tempat untuk pulang. Tempat untuk bernafas. Tempat untuk menjadi diri kita sendiri, tanpa harus berpura-pura.',
-      'Dan ini yang paling jujur ingin ijal sampaikan: maafin Ijal ya, kalau Ijal masih jauh dari yang terbaik buat Nanun. Tapi Ijal masih berjanji ke Nanun — Ijal mau terus belajar menjadi yang terbaik untuk Nanun. Tempat ternyaman sekaligus teraman Nanun. Orang yang tidak akan menyia-nyiakan kepercayaan Nanun. I\'m very happy to have you in my life. I think you are the best gift God has given to me, sejauh ini.',
+      'Dan ini yang paling jujur ingin ijal sampaikan: maafin Ijal ya, kalau Ijal masih jauh dari yang terbaik buat Nanun. Tapi Ijal masih berjanji ke Nanun — Ijal mau terus belajar menjadi yang terbaik untuk Nanun. Tempat ternyaman sekaligus teraman Nanun. Orang yang tidak akan menyia-nyiakan kepercayaan Nanun. I\'m very happy to have you in my life. I think you are the best gift from God has given to me, sejauh ini.',
       'Ini bukan akhir dari cerita kita. Ini hanya akhir dari enam bulan pertama. Dan Ijal ingin terus menulis bareng Nanun — satu halaman pada satu waktu, dengan hati yang terbuka.'
     ],
     signoff: 'With all my heart, I love you so much, Nun.',
@@ -231,6 +288,7 @@ const CHAPTERS = [
   { id: 'opening', label: 'Cover' },
   { id: 'chapter-1', label: 'Awal' },
   { id: 'chapter-2', label: 'Kenangan' },
+  { id: 'gallery', label: 'Galeri' },
   { id: 'chapter-3', label: 'Kamu' },
   { id: 'chapter-4', label: 'Makna' },
   { id: 'chapter-5', label: 'Masa Depan' },
@@ -238,6 +296,10 @@ const CHAPTERS = [
 ];
 
 let currentMemoryIndex = 0;
+let currentGalleryIndex = 0;
+let galleryIntroStep = 0;
+let galleryIntroNoTaps = 0;
+let galleryIntroActive = false;
 let activeOverlay = null;
 let currentChapterIndex = 0;
 
@@ -283,6 +345,31 @@ function setOverlayOpen(open) {
 
 function reducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function isGalleryVideo(item) {
+  if (item.type === 'video') return true;
+  if (item.type === 'photo') return false;
+  return /\.(mp4|mov|webm)(\?.*)?$/i.test(item.src);
+}
+
+function galleryVideoMime(src) {
+  if (/\.mov(\?.*)?$/i.test(src)) return 'video/quicktime';
+  if (/\.webm(\?.*)?$/i.test(src)) return 'video/webm';
+  return 'video/mp4';
+}
+
+function pauseGalleryVideo() {
+  const video = document.getElementById('gallery-lightbox-video');
+  if (!video) return;
+  video.pause();
+  video.currentTime = 0;
+}
+
+function applyGalleryVideoVolume(video) {
+  if (!video) return;
+  const vol = APP_CONTENT.gallery.videoVolume;
+  video.volume = typeof vol === 'number' ? Math.min(1, Math.max(0, vol)) : 0.5;
 }
 
 function memoryArtDeco(theme) {
@@ -424,6 +511,77 @@ function renderChapter2() {
   return section;
 }
 
+function resolveGalleryIntro(item) {
+  if (!isGalleryVideo(item)) return null;
+  if (item.introKey && GALLERY_INTROS[item.introKey]) return GALLERY_INTROS[item.introKey];
+  if (item.intro?.steps?.length) return item.intro;
+  const file = (item.src || '').split('/').pop().toLowerCase();
+  if (file.includes('i love you')) return GALLERY_INTROS.finale;
+  if (file.includes('edit video')) return GALLERY_INTROS.edited;
+  if (file.includes('all video')) return GALLERY_INTROS.compilation;
+  return null;
+}
+
+function isGalleryFinale(item) {
+  return Boolean(item.finale) || /i love you/i.test(item.src || '');
+}
+
+function hasGalleryIntro(item) {
+  return Boolean(resolveGalleryIntro(item));
+}
+
+function renderGalleryThumb(item, i) {
+  const isVideo = isGalleryVideo(item);
+  const isFinale = isGalleryFinale(item);
+  const classes = [
+    'gallery__item',
+    'reveal',
+    item.featured ? 'gallery__item--featured' : '',
+    isVideo ? 'gallery__item--video' : '',
+    isFinale ? 'gallery__item--finale' : ''
+  ].filter(Boolean).join(' ');
+  const label = isVideo ? `Putar video ${i + 1}` : `Buka foto ${i + 1}`;
+
+  let media;
+  if (isVideo) {
+    const poster = item.poster ? ` poster="${item.poster}"` : '';
+    const badge = isFinale
+      ? '<span class="gallery__special gallery__special--finale" aria-hidden="true">♡</span>'
+      : '';
+    media = `
+      <video src="${item.src}"${poster} muted playsinline preload="metadata" aria-hidden="true"
+        onerror="this.closest('.gallery__item').classList.add('gallery__item--missing')"></video>
+      <span class="gallery__play" aria-hidden="true"></span>
+      ${badge}`;
+  } else {
+    media = `
+      <img src="${item.src}" alt="${item.alt || ''}" loading="lazy"
+        onerror="this.closest('.gallery__item').classList.add('gallery__item--missing')">`;
+  }
+
+  return `
+    <button type="button" class="${classes}" data-index="${i}" aria-label="${label}"
+      style="--d:${(i % 6) * 0.05}s">${media}</button>`;
+}
+
+function renderGallery() {
+  const g = APP_CONTENT.gallery;
+  const section = createElement('section', 'story-section story-section--auto gallery');
+  section.id = 'gallery';
+
+  const itemsHTML = g.photos.map((item, i) => renderGalleryThumb(item, i)).join('');
+
+  section.innerHTML = `
+    <div class="gallery__header reveal">
+      <p class="chapter-tag">${g.label}</p>
+      <h2 class="chapter-title">${g.title}</h2>
+      <p class="gallery__hint">${g.hint}</p>
+    </div>
+    <div class="gallery__grid">${itemsHTML}</div>
+  `;
+  return section;
+}
+
 function renderChapter3() {
   const section = createElement('section', 'story-section story-section--auto ch3');
   section.id = 'chapter-3';
@@ -497,6 +655,338 @@ function renderEnding() {
     </div>
   `;
   return section;
+}
+
+/* ============================================
+   Gallery Lightbox
+   ============================================ */
+
+function createGalleryLightbox() {
+  const el = createElement('div', 'gallery-lightbox');
+  el.id = 'gallery-lightbox';
+  el.setAttribute('role', 'dialog');
+  el.setAttribute('aria-modal', 'true');
+  el.innerHTML = `
+    <div class="gallery-lightbox__bg" id="gallery-lightbox-bg"></div>
+    <div class="gallery-lightbox__top">
+      <span class="gallery-lightbox__counter" id="gallery-lightbox-counter"></span>
+      <button type="button" class="gallery-lightbox__close" id="gallery-lightbox-close" aria-label="Tutup">✕</button>
+    </div>
+    <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" id="gallery-prev" aria-label="Foto sebelumnya">←</button>
+    <div class="gallery-lightbox__stage">
+      <div class="gallery-intro" id="gallery-intro" hidden></div>
+      <img class="gallery-lightbox__img" id="gallery-lightbox-img" alt="" hidden>
+      <video class="gallery-lightbox__video" id="gallery-lightbox-video"
+        playsinline controls preload="metadata" hidden></video>
+    </div>
+    <button class="gallery-lightbox__nav gallery-lightbox__nav--next" id="gallery-next" aria-label="Foto berikutnya">→</button>
+  `;
+  return el;
+}
+
+function bindGalleryLightboxEvents() {
+  const lightbox = document.getElementById('gallery-lightbox');
+  if (!lightbox || lightbox.dataset.bound) return;
+  lightbox.dataset.bound = '1';
+
+  lightbox.querySelector('#gallery-lightbox-bg')?.addEventListener('click', closeGalleryLightbox);
+  lightbox.querySelector('#gallery-lightbox-close')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    closeGalleryLightbox();
+  });
+}
+
+function openGalleryLightbox(index) {
+  currentGalleryIndex = index;
+  updateGalleryLightbox();
+  document.getElementById('gallery-lightbox').classList.add('open');
+  lockBody();
+  setOverlayOpen(true);
+  activeOverlay = 'gallery';
+}
+
+function closeGalleryLightbox() {
+  pauseGalleryVideo();
+  galleryIntroActive = false;
+  galleryIntroStep = 0;
+  galleryIntroNoTaps = 0;
+  const intro = document.getElementById('gallery-intro');
+  if (intro) { intro.hidden = true; intro.innerHTML = ''; }
+  document.getElementById('gallery-lightbox')?.classList.remove('gallery-lightbox--intro');
+  document.getElementById('gallery-lightbox').classList.remove('open');
+  unlockBody();
+  setOverlayOpen(false);
+  activeOverlay = null;
+}
+
+function setGalleryMediaVisible(show) {
+  const img = document.getElementById('gallery-lightbox-img');
+  const video = document.getElementById('gallery-lightbox-video');
+  const intro = document.getElementById('gallery-intro');
+  const lightbox = document.getElementById('gallery-lightbox');
+  if (show) {
+    intro.hidden = true;
+    lightbox?.classList.remove('gallery-lightbox--intro');
+    galleryIntroActive = false;
+  } else {
+    intro.hidden = false;
+    img.hidden = true;
+    video.hidden = true;
+    lightbox?.classList.add('gallery-lightbox--intro');
+    galleryIntroActive = true;
+  }
+}
+
+function renderGalleryIntroStep(item) {
+  const intro = document.getElementById('gallery-intro');
+  const introConfig = resolveGalleryIntro(item);
+  const step = introConfig?.steps[galleryIntroStep];
+  if (!step) {
+    finishGalleryIntro(item);
+    return;
+  }
+
+  setGalleryMediaVisible(false);
+  intro.innerHTML = '';
+  intro.className = 'gallery-intro' + (isGalleryFinale(item) ? ' gallery-intro--finale' : '');
+
+  const card = createElement('div', 'gallery-intro__card');
+
+  if (step.type === 'splash') {
+    card.innerHTML = `
+      ${step.badge ? `<p class="gallery-intro__badge">${step.badge}</p>` : ''}
+      <h3 class="gallery-intro__title">${step.title}</h3>
+      <p class="gallery-intro__text">${step.text}</p>
+      <button type="button" class="btn gallery-intro__btn" data-intro-action="next">${step.button || 'Putar'}</button>
+    `;
+  }
+
+  if (step.type === 'checklist') {
+    const checksHTML = step.items.map((label, i) => `
+      <label class="gallery-intro__check">
+        <input type="checkbox" class="gallery-intro__checkbox" data-check="${i}">
+        <span class="gallery-intro__check-box" aria-hidden="true"></span>
+        <span>${label}</span>
+      </label>
+    `).join('');
+    card.innerHTML = `
+      <h3 class="gallery-intro__title">${step.title}</h3>
+      <div class="gallery-intro__checks">${checksHTML}</div>
+      <button type="button" class="btn gallery-intro__btn" data-intro-action="check" disabled>${step.button || 'Lanjut'}</button>
+    `;
+  }
+
+  if (step.type === 'confirm') {
+    card.innerHTML = `
+      <h3 class="gallery-intro__title">${step.title}</h3>
+      <p class="gallery-intro__text" id="gallery-intro-confirm-text">${step.text}</p>
+      <div class="gallery-intro__dual">
+        <button type="button" class="gallery-intro__ghost" data-intro-action="no">${step.no || 'Belum'}</button>
+        <button type="button" class="btn gallery-intro__btn gallery-intro__btn--sm" data-intro-action="next">${step.yes || 'Yakin'}</button>
+      </div>
+    `;
+    card.dataset.noReply = step.noReply || '';
+  }
+
+  if (step.type === 'loading') {
+    card.innerHTML = `
+      <p class="gallery-intro__badge">LOADING</p>
+      <h3 class="gallery-intro__title" id="gallery-intro-load-text">${step.messages[0]}</h3>
+      <div class="gallery-intro__bar"><span id="gallery-intro-load-bar"></span></div>
+    `;
+    intro.appendChild(card);
+    runGalleryIntroLoading(step);
+    return;
+  }
+
+  intro.appendChild(card);
+  bindGalleryIntroActions(item, card);
+}
+
+function bindGalleryIntroActions(item, card) {
+  const btn = card.querySelector('[data-intro-action="check"]');
+  if (btn) {
+    const boxes = card.querySelectorAll('.gallery-intro__checkbox');
+    const update = () => {
+      btn.disabled = ![...boxes].every(b => b.checked);
+    };
+    boxes.forEach(box => {
+      box.addEventListener('change', update);
+    });
+  }
+
+  card.querySelectorAll('[data-intro-action]').forEach(el => {
+    el.addEventListener('click', () => {
+      const action = el.dataset.introAction;
+      if (action === 'next') advanceGalleryIntro(item);
+      if (action === 'check' && !el.disabled) advanceGalleryIntro(item);
+      if (action === 'no') handleGalleryIntroNo(item, card);
+    });
+  });
+}
+
+function handleGalleryIntroNo(item, card) {
+  galleryIntroNoTaps++;
+  const introConfig = resolveGalleryIntro(item);
+  const step = introConfig?.steps[galleryIntroStep];
+  const textEl = card.querySelector('#gallery-intro-confirm-text');
+  if (galleryIntroNoTaps >= 2) {
+    advanceGalleryIntro(item);
+    return;
+  }
+  if (textEl && step.noReply) {
+    textEl.textContent = step.noReply;
+    card.classList.add('gallery-intro__card--wobble');
+    setTimeout(() => card.classList.remove('gallery-intro__card--wobble'), 500);
+  }
+}
+
+function runGalleryIntroLoading(step) {
+  const textEl = document.getElementById('gallery-intro-load-text');
+  const barEl = document.getElementById('gallery-intro-load-bar');
+  const msgs = step.messages || ['Loading...'];
+  const duration = step.duration || 2500;
+  const start = performance.now();
+  let msgIndex = 0;
+
+  function tick(now) {
+    const p = Math.min((now - start) / duration, 1);
+    if (barEl) barEl.style.width = `${p * 100}%`;
+    const nextMsg = Math.min(Math.floor(p * msgs.length), msgs.length - 1);
+    if (nextMsg !== msgIndex && textEl) {
+      msgIndex = nextMsg;
+      textEl.textContent = msgs[msgIndex];
+    }
+    if (p < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      const item = APP_CONTENT.gallery.photos[currentGalleryIndex];
+      advanceGalleryIntro(item);
+    }
+  }
+  requestAnimationFrame(tick);
+}
+
+function advanceGalleryIntro(item) {
+  galleryIntroNoTaps = 0;
+  galleryIntroStep++;
+  const introConfig = resolveGalleryIntro(item);
+  if (!introConfig || galleryIntroStep >= introConfig.steps.length) {
+    finishGalleryIntro(item);
+  } else {
+    renderGalleryIntroStep(item);
+  }
+}
+
+function finishGalleryIntro(item) {
+  galleryIntroStep = 0;
+  galleryIntroNoTaps = 0;
+  setGalleryMediaVisible(true);
+  showGalleryMedia(item);
+  const video = document.getElementById('gallery-lightbox-video');
+  if (video && !video.hidden) {
+    applyGalleryVideoVolume(video);
+    video.play().catch(() => {});
+  }
+}
+
+function showGalleryMedia(item) {
+  const img = document.getElementById('gallery-lightbox-img');
+  const video = document.getElementById('gallery-lightbox-video');
+  const isVideo = isGalleryVideo(item);
+
+  if (isVideo) {
+    img.hidden = true;
+    img.removeAttribute('src');
+    video.hidden = false;
+    video.innerHTML = `<source src="${item.src}" type="${galleryVideoMime(item.src)}">`;
+    if (item.poster) video.setAttribute('poster', item.poster);
+    else video.removeAttribute('poster');
+    applyGalleryVideoVolume(video);
+    video.onloadedmetadata = () => applyGalleryVideoVolume(video);
+    video.load();
+  } else {
+    video.hidden = true;
+    video.innerHTML = '';
+    video.removeAttribute('poster');
+    img.hidden = false;
+    img.src = item.src;
+    img.alt = item.alt || '';
+  }
+}
+
+function updateGalleryLightbox() {
+  pauseGalleryVideo();
+  galleryIntroStep = 0;
+  galleryIntroNoTaps = 0;
+  const items = APP_CONTENT.gallery.photos;
+  const item = items[currentGalleryIndex];
+  const lightbox = document.getElementById('gallery-lightbox');
+
+  if (hasGalleryIntro(item)) {
+    renderGalleryIntroStep(item);
+  } else {
+    setGalleryMediaVisible(true);
+    showGalleryMedia(item);
+  }
+
+  lightbox?.classList.toggle('gallery-lightbox--intro', galleryIntroActive);
+
+  document.getElementById('gallery-lightbox-counter').textContent =
+    `${currentGalleryIndex + 1} / ${items.length}`;
+  document.getElementById('gallery-prev').disabled = currentGalleryIndex === 0;
+  document.getElementById('gallery-next').disabled = currentGalleryIndex === items.length - 1;
+}
+
+function initGallery() {
+  const items = document.querySelectorAll('.gallery__item:not(.gallery__item--missing)');
+  items.forEach(item => {
+    item.addEventListener('click', () => openGalleryLightbox(Number(item.dataset.index)));
+  });
+
+  document.getElementById('gallery-prev').addEventListener('click', () => {
+    if (currentGalleryIndex > 0) {
+      currentGalleryIndex--;
+      updateGalleryLightbox();
+    }
+  });
+
+  document.getElementById('gallery-next').addEventListener('click', () => {
+    if (currentGalleryIndex < APP_CONTENT.gallery.photos.length - 1) {
+      currentGalleryIndex++;
+      updateGalleryLightbox();
+    }
+  });
+
+  initGallerySwipe();
+}
+
+function initGallerySwipe() {
+  const stage = document.querySelector('.gallery-lightbox__stage');
+  if (!stage) return;
+
+  let startX = 0;
+  let dragging = false;
+
+  stage.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    dragging = true;
+  }, { passive: true });
+
+  stage.addEventListener('touchend', (e) => {
+    if (!dragging || galleryIntroActive) return;
+    dragging = false;
+    const diff = e.changedTouches[0].clientX - startX;
+    const total = APP_CONTENT.gallery.photos.length;
+    if (diff < -50 && currentGalleryIndex < total - 1) {
+      currentGalleryIndex++;
+      updateGalleryLightbox();
+    } else if (diff > 50 && currentGalleryIndex > 0) {
+      currentGalleryIndex--;
+      updateGalleryLightbox();
+    }
+  }, { passive: true });
 }
 
 /* ============================================
@@ -881,10 +1371,16 @@ function initEvents() {
     if (e.key === 'Escape') {
       if (activeOverlay === 'memory') closeMemoryOverlay();
       if (activeOverlay === 'letter') closeLetterOverlay();
+      if (activeOverlay === 'gallery') closeGalleryLightbox();
     }
     if (activeOverlay === 'memory') {
       if (e.key === 'ArrowLeft' && currentMemoryIndex > 0) { currentMemoryIndex--; updateMemoryContent(); }
       if (e.key === 'ArrowRight' && currentMemoryIndex < APP_CONTENT.memories.length - 1) { currentMemoryIndex++; updateMemoryContent(); }
+    }
+    if (activeOverlay === 'gallery') {
+      const total = APP_CONTENT.gallery.photos.length;
+      if (e.key === 'ArrowLeft' && currentGalleryIndex > 0) { currentGalleryIndex--; updateGalleryLightbox(); }
+      if (e.key === 'ArrowRight' && currentGalleryIndex < total - 1) { currentGalleryIndex++; updateGalleryLightbox(); }
     }
   });
 }
@@ -1002,11 +1498,14 @@ function init() {
   app.appendChild(renderOpening());
   app.appendChild(renderChapter1());
   app.appendChild(renderChapter2());
+  app.appendChild(renderGallery());
   app.appendChild(renderChapter3());
   app.appendChild(renderChapter4());
   app.appendChild(renderChapter5());
   app.appendChild(renderEnding());
   document.body.appendChild(createMemoryOverlay());
+  document.body.appendChild(createGalleryLightbox());
+  bindGalleryLightboxEvents();
   document.body.appendChild(createLetterOverlay());
   document.body.appendChild(createMusicPlayer());
 
@@ -1016,6 +1515,7 @@ function init() {
   initReveal();
   initChapter4Reveal();
   initMemorySlider();
+  initGallery();
   initQualities();
   initEndingReveal();
   initEvents();
