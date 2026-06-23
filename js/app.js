@@ -242,7 +242,7 @@ const APP_CONTENT = {
   future: {
     label: 'Chapter Five',
     title: 'Whatever Comes Next',
-    backgroundImage: 'assets/images/chapter5-bg.jpg',
+    backgroundImage: 'assets/images/ngopi1.jpg',
     lead: 'No expectations — just honesty.',
     paragraphs: [
       'Bukannya tidak memiliki rencana besar — hanya harapan tenang: jadi tempat yang nyaman dan aman buat kamu.',
@@ -273,7 +273,7 @@ const APP_CONTENT = {
       'Enam bulan ini bukan waktu yang Ijal lewati begitu aja. Setiap momennya benar-benar Ijal rasain. Dan Ijal bersyukur — sangat bersyukur — bahwa Nanun ada di dalamnya.',
       'Ijal ingin kita saling menguatkan. Bukan hanya Ijal yang didukung, bukan hanya Ijal yang merasa aman — tapi kita berdua. Tempat untuk pulang. Tempat untuk bernafas. Tempat untuk menjadi diri kita sendiri, tanpa harus berpura-pura.',
       'Dan ini yang paling jujur ingin ijal sampaikan: maafin Ijal ya, kalau Ijal masih jauh dari yang terbaik buat Nanun. Tapi Ijal masih berjanji ke Nanun — Ijal mau terus belajar menjadi yang terbaik untuk Nanun. Tempat ternyaman sekaligus teraman Nanun. Orang yang tidak akan menyia-nyiakan kepercayaan Nanun. I\'m very happy to have you in my life. I think you are the best gift from God has given to me, sejauh ini.',
-      'Ini bukan akhir dari cerita kita. Ini hanya akhir dari enam bulan pertama. Dan Ijal ingin terus menulis bareng Nanun — satu halaman pada satu waktu, dengan hati yang terbuka.'
+      'Ini bukan akhir dari cerita kita. Ini hanya akhir dari enam bulan pertama. Dan Ijal ingin terus menulis bareng Nanun — satu demi satu halaman, story of us.'
     ],
     signoff: 'With all my heart, I love you so much, Nun.',
     signature: 'Ijal'
