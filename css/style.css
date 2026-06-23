@@ -1,4 +1,4 @@
-/* Our First Six Months — Story Mode */
+/* Six months of memories — Story Mode */
 
 :root {
   --bg: #F2F6FB;
@@ -1363,6 +1363,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .ch4__inner { max-width: var(--read); margin: 0 auto; text-align: left; }
 
+.ch4__lead {
+  max-width: var(--read);
+  margin: 0.75rem auto 2rem;
+  color: var(--text-3);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
 .ch4__para {
   opacity: 0;
   transform: translateY(20px);
@@ -1421,6 +1429,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .ch5__content .chapter-tag { color: var(--accent-soft); }
 .ch5__content .chapter-title { color: #fff; margin-bottom: 1.5rem; }
 
+.ch5__lead {
+  margin: -0.75rem 0 1.25rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(242, 246, 251, 0.65);
+}
+
 .ch5__text {
   font-size: 1.05rem;
   line-height: 1.9;
@@ -1472,6 +1487,17 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 
 .ending__cta.show { opacity: 1; transform: none; }
+
+.ending__hint {
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  color: var(--text-3);
+  font-weight: 300;
+  max-width: 16rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
 
 .overlay {
   position: fixed;

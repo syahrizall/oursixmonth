@@ -1,30 +1,30 @@
 /* ============================================
-   Our First Six Months — Application
+   Six months of memories — Application
    ============================================ */
 
 const GALLERY_INTROS = {
   compilation: {
     steps: [{
       type: 'splash',
-      title: 'Our First Six Months',
-      text: 'Sengaja ga di edit, tapi semoga suka ya.',
-      button: 'Putar'
+      title: 'Six Months in Clips',
+      text: 'Random moments from our first six months — nothing staged, just us.',
+      button: 'Play'
     }]
   },
   edited: {
     steps: [{
       type: 'splash',
-      title: 'I Love You All About You',
-      text: 'Sesuai judul, video ini semua tentang kamu. Tapi sebenernya semua tentang kita.',
-      button: 'Putar'
+      title: 'A Little Edit',
+      text: 'This is a short video I made for you. I hope you like it.',
+      button: 'Play'
     }]
   },
   finale: {
     steps: [{
       type: 'splash',
-      title: 'Video yang paling aku suka',
-      text: 'No word can describe how feel i am when i watch this video',
-      button: 'Lihat Video'
+      title: 'One I Saved for Last',
+      text: 'No rush — press play whenever you feel like it. and this is my favorite video of you',
+      button: 'Watch'
     }]
   }
 };
@@ -32,114 +32,116 @@ const GALLERY_INTROS = {
 const APP_CONTENT = {
   opening: {
     title: 'Our First Six Months',
-    subtitle: 'Every moment of these six months — I didn\'t just live through them. I truly felt them. And they changed me.',
-    buttonText: 'Begin'
+    subtitle: 'We were sweeter than we probably admitted — and these six months still feel warm when I look back.',
+    buttonText: 'Begin',
+    hint: 'Tap to start reading'
   },
 
   music: {
-    src: 'assets/audio/surat-cinta-untuk-starla.mp3',
-    title: 'Surat Cinta Untuk Starla',
-    artist: 'Virgoun',
-    volume: 0.32,
+    src: 'assets/audio/rivers-flow-in-you.mp3',
+    title: 'Rivers Flow In You',
+    artist: 'Instrumental',
+    volume: 0.28,
     loop: true
   },
 
   chapter1: {
     label: 'Chapter One',
     title: 'How It All Started',
-    lead: 'Awalnya sih cuma mabar ya. Lucu juga sih kalo diinget sekarang — tapi dari situ, pelan-pelan, kita saling kenal satu sama lain.',
-    mainImage: 'assets/images/Ngopi.jpg',
+    lead: 'Lucu juga kalau diliat lagi — tanpa sadar, foto ini terasa seperti menunjukkan kita sedang di "rumah". Dan memang, begitulah yang aku rasakan, sebenarnya.',
+    mainImage: 'assets/images/Mirror Selfie.jpg',
     supportingImages: [
-      'assets/images/support-1.jpg',
+      'assets/images/support-1.jpg'
     ],
     paragraphs: [
-      'Sleepcall di game, obrolan kecil, hari demi hari. Mulai chattingan di TikTok terus ke Discord, baru ke WhatsApp hahahaha — setiap langkah terasa natural. Let it flow. No pressure.',
-      'Aku gatau kapan kamu mulai kerasa beda. Mungkin saat kamu benar-benar dengerin aku — bukan nunggu giliran ngomong. Di situ aku ngerasa aman.',
-      '"Pake sunscreen. Skincare. Kalo bohong tertimpa musibah, hahaha." Candanya selalu ngena sih. Di balik itu, aku tau kamu peduli.',
-      'Kamu sempet minta maaf berkali-kali — karena ngebawa aku masuk pas kamu lagi di titik terendah. Tapi yang kurasa bukan beban. Itu kepercayaan. Kamu tetap biarin aku ada di sisi terlemahmu.',
-      'Enam bulan kita mulai dari hal-hal sederhana aja. Game, obrolan, langkah kecil — yang ternyata bawa kita ke sini.'
+      'Semuanya berawal sederhana — obrolan kecil, tertawa, hari demi hari. Mulai dari Sleep Call in Game? hahaha, ke TikTok, Discord, lalu ke WhatsApp. Setiap langkah terasa mengalir. Tanpa terburu-buru. No Pressure.',
+      'Aku tidak tahu persis kapan kamu mulai terasa berbeda bagiku. Mungkin saat kita mulai "nyambung" energinya. Nah, yang jelas, sejak saat itu bersama kamu terasa nyaman.',
+      '"Pakai sunscreen. Jangan skip skincare. Makannya yang sehat. Kalau bohong, tertimpa musibah, hahaha." Kamu bilangnya seperti becanda. Tapi di baliknya, aku mendengar kepedulian.',
+      'At the same time, tanpa kamu sadari, kamu juga memperbolehkanku masuk di masa yang tidak mudah bagimu. Aku tidak pernah merasa terbebani — hanya dipercaya. Kamu membiarkanku ada di sampingmu saat semuanya berat, dan itu berarti banyak bagiku.',
+      'Enam bulan kita tumbuh dari hal-hal biasa: pesan, langkah kecil, kehangatan yang pelan-pelan terasa. Kalau dipikir lagi, kesederhanaan itulah yang membuat semuanya terasa nyata — dan manis.'
     ]
   },
 
   memories: [
     {
       id: 'memory-1',
-      title: 'Cara Kamu Kenalan Sama Ibu',
+      title: 'Hampers Lebaran & Surat',
       image: 'assets/images/perkenalan-ke-ibu.jpg',
       hasImage: true,
       visual: {
         icon: '✉',
-        tag: 'A letter inside',
+        tag: 'Ada surat di dalamnya',
         date: 'Lebaran',
-        teaser: 'Surat formal di dalam hampers Lebaran — perkenalkan, saya Nur...',
+        teaser: 'Hampers, surat formal kecil — dan mungkin ibuku yang tahu duluan sebelum kamu cerita.',
         theme: 'letter'
       },
       story: [
-        'Lebaran itu, kamu kasih hampers ke rumah. Aku baru tahu ada surat di dalamnya setelah ibu cerita.',
-        'Formal banget, hahaha — "perkenalkan, saya Nur." Lucu, sopan, hangat. Cara kamu masuk ke dunia kecilku lewat ibu. Sejak itu aku tahu: kamu bukan orang yang main-main.'
+        'Lebaran itu, kamu titip hampers ke rumah — dengan surat kecil terselip di dalamnya. Sangat sopan, sangat formal, seolah ingin memperkenalkan diri dengan benar lewat ibuku dulu.',
+        'Formal banget, hahaha. "Perkenalkan, saya Nur." Kamu masuk ke duniaku lewat ibuku hari itu, dan aku masih tersenyum kalau mengingatnya. Kamu memang tahu cara menunjukkan niat — dan aku merasakannya.'
       ]
     },
     {
       id: 'memory-2',
-      title: 'Saat Aku Sakit',
+      title: 'Saat Aku Tidak Enak Badan',
       image: 'assets/images/memory-2.jpg',
       hasImage: false,
       visual: {
         icon: '♡',
-        tag: 'Taken care of',
+        tag: 'Dirawat dengan lembut',
         date: '23 Jan 2026',
-        teaser: 'Saat aku sakit, kamu ada — bahkan memastikan bahwa aku tidur dengan baik.',
+        teaser: 'Aku sedang tidak enak badan — dan kamu ada di sampingku malam itu, dengan halus.',
         theme: 'care'
       },
       story: [
-        '23 Januari 2026. Aku sakit pas main ke kamu, dari mulai ngompres, nungguin sampe aku bisa tidur, bahkan ketika aku bangun minta apapun, ntah permintaan saat aku sadar atau tidak kamu mengusahakan apa yang aku mau. Dan yang paling kuingat: wajahmu sumringah saat aku sudah sembuh. Di situ aku tahu, aku benar-benar dirawat.'
+        '23 Januari 2026. Aku sedang tidak enak badan. Aku ingat kamu yang mengurusku — kompres hangat, menemani sampai aku bisa tertidur, dan melakukan apa pun yang kubutuhkan, saat aku sadar maupun tidak.',
+        'Yang paling kuingat bukan sakitnya. Tapi cara kamu mengurusku dengan halus malam itu — pelan, sabar, tanpa membuatku merasa menjadi beban. I hope you know how much I appreciate it.'
       ]
     },
     {
       id: 'memory-3',
-      title: 'Saat Kamu Bantu Aku Develop Produk',
+      title: 'Saat Kamu Membantu Aku Membuat Aplikasi',
       image: 'assets/images/real support.jpeg',
       hasImage: true,
       story: [
-        '4 Februari 2026, malam. Lewat video call, kamu temani aku develop produk — penuh ide, penuh semangat, hadir sepenuhnya.',
-        'Aku merasa dipercaya. Partner, bukan cuma pasangan. Kamu ada di hari-hari yang berat, bukan hanya yang ringan.'
+        '4 Februari 2026, malam. Di video call, kamu bantu aku yang sedang membuat aplikasi — penuh ide, penuh perhatian, bukan hanya menemani aku.',
+        'Aku merasa kita sedang membangun sesuatu bersama. Kamu menemani aku di malam yang berat dan penuh mimpi, dan itu berarti banyak bagiku.'
       ]
     },
     {
       id: 'memory-4',
-      title: 'Nyunset Bareng di Atap',
+      title: 'Senja di Rooftop',
       image: 'assets/images/NYUNSET.jpg',
       hasImage: true,
       story: [
-        'Sore di atap tempatmu. Kopi buatanmu, langit berubah warna, kita diam-diam menikmati sesuatu yang tidak perlu diucapkan.',
-        'Di sanalah segalanya tenang. Tidak ada yang perlu dikejar. Hanya kamu, langit sore, dan perasaan bahwa aku tepat di tempat yang seharusnya.'
+        'Sore di atap kala itu. Kopi yang kamu buat, langit berubah warna, dan perasaan nyaman yang tidak perlu dijelaskan oleh kata.',
+        'Semuanya terasa tenang. Hanya kamu, senja, dan perasaan nyaman yang tepat di mana aku ingin berada - disampingmu.'
       ]
     },
     {
       id: 'memory-5',
-      title: 'Tiap Kali Datang ke Tempatmu',
+      title: 'Setiap Kali Aku Datang ke tempatmu',
       image: 'assets/images/memory-5.jpg',
       hasImage: false,
       visual: {
         icon: '⌂',
-        tag: 'Feels like home',
-        date: 'Ketika aku main ke tempatmu',
-        teaser: 'Setiap datang, rasanya seperti pulang — ke seseorang, bukan ke bangunan.',
+        tag: 'Disambut dengan penuh harap',
+        date: 'Saat aku datang',
+        teaser: 'Setiap kali aku datang, caramu menyambut selalu terasa excited — jelas banget kalau itu ditunggu.',
         theme: 'home'
       },
       story: [
-        'Setiap kali aku datang ke tempatmu, rasanya pulang — ke seseorang, bukan ke bangunan.',
-        'Peluk penuh harapan, senyum yang ditunggu. Cukup datang, dan kamu menunggu aku ada di sana. Aku merasa diterima apa adanya.'
+        'Setiap kali aku main ke tempatmu, rasanya seperti pulang, bukan soal bangunan tapi soal "rumah" yang memberikan kenyamanan.',
+        'Yang paling kuingat: betapa semangatnya kamu menyambutku. Pelukan, senyum, matamu yang langsung cerah — seolah kedatanganku memang kamu nantikan. Aku selalu merasa diterima, apa adanya.'
       ]
     },
     {
       id: 'memory-6',
-      title: 'Ngopi di Coffee Shop',
+      title: 'Kopi Nako Abdul Muis di Jakarta',
       image: 'assets/images/image.jpg',
       hasImage: true,
       story: [
-        'Pas ngopi saat itu, seringnya aku grogi, kamu sangat antusias bercerita, tanpa beban dan hal itu juga yang bikin aku terpancing untuk banyak cerita. Aku ngerasa didengar.',
-        'Ada foto kamu melihat ke arahku — setiap kali kulihat, aku tersenyum. Ntahlah saat itu kamu mikir apa, hahaha.'
+        'Hari itu, Kita memutuskan untuk ketemu. Aku sedikit gugup; kamu selalu bisa mencairkan suasana. dan betapa senangnya apa yang aku rasakan saat itu.',
+        'Ada foto kamu yang melihatku — aku masih tersenyum setiap kali melihatnya. Aku bertanya-tanya apa yang kamu pikirkan saat itu?, hahaha.'
       ]
     }
   ],
@@ -147,29 +149,23 @@ const APP_CONTENT = {
   gallery: {
     label: 'Interlude',
     title: 'Little Snapshots',
-    hint: 'Ketuk untuk lihat lebih besar',
+    hint: 'Tap any moment — photos and clips from our six months.',
     videoVolume: 0.5,
     photos: [
-      { type: 'video', src: 'assets/images/all video.mp4', alt: 'Semua momen kita', featured: true, introKey: 'compilation' },
+      { type: 'video', src: 'assets/images/all video.mp4', alt: 'Moments from our six months', featured: true, introKey: 'compilation' },
 
-      { src: 'assets/images/Di Travel.jpg', alt: 'Di Travel' },
-      { src: 'assets/images/Gantungan 1.jpg', alt: 'Gantungan' },
-      { src: 'assets/images/kocak.jpeg', alt: 'Kocak' },
-      { src: 'assets/images/menatap.jpg', alt: 'Menatap' },
-      { src: 'assets/images/Ngopi Sip.JPG', alt: 'Ngopi sip' },
-      { src: 'assets/images/Ngopi.jpg', alt: 'Ngopi' },
-      { src: 'assets/images/Renang.jpg', alt: 'Renang' },
-      { src: 'assets/images/Sip.jpg', alt: 'Sip' },
+      { src: 'assets/images/Di Travel.jpg', alt: 'On a trip together' },
+      { src: 'assets/images/Gantungan 1.jpg', alt: 'Hanging out' },
+      { src: 'assets/images/kocak.jpeg', alt: 'A silly moment' },
+      { src: 'assets/images/menatap.jpg', alt: 'A look between us' },
+      { src: 'assets/images/Ngopi Sip.JPG', alt: 'Coffee sip' },
+      { src: 'assets/images/Ngopi.jpg', alt: 'Coffee together' },
+      { src: 'assets/images/Renang.jpg', alt: 'Swimming' },
+      { src: 'assets/images/Sip.jpg', alt: 'Cheers' },
       { src: 'assets/images/Sycho.PNG', alt: 'Sycho' },
-      { src: 'assets/images/Tidur.jpeg', alt: 'Tidur' },
+      { src: 'assets/images/Tidur.jpeg', alt: 'Resting' },
 
-      { type: 'video', src: 'assets/images/Baru Bangun.mp4', alt: 'Baru bangun' },
-      { type: 'video', src: 'assets/images/Baru Bangun 2.mp4', alt: 'Baru bangun 2' },
-      { type: 'video', src: 'assets/images/Bingung.mp4', alt: 'Bingung' },
-      { type: 'video', src: 'assets/images/Ngops Awal.mp4', alt: 'Ngopi awal' },
-      { type: 'video', src: 'assets/images/Nongs.mp4', alt: 'Nongs' },
-      { type: 'video', src: 'assets/images/With Santa.mp4', alt: 'With Santa' },
-      { type: 'video', src: 'assets/images/edit video.mp4', alt: 'Video hasil edit', introKey: 'edited' },
+      { type: 'video', src: 'assets/images/edit video.mp4', alt: 'A small edit for you', introKey: 'edited' },
 
       { type: 'video', src: 'assets/images/I Love You.mp4', alt: 'I love you', finale: true, introKey: 'finale' }
     ]
@@ -179,54 +175,55 @@ const APP_CONTENT = {
     {
       id: 'quality-1',
       title: 'Your Little Reminders',
-      preview: 'Sunscreen, istirahat, makan — kamu selalu ingatkan.',
+      preview: 'Sunscreen, rest, food — you noticed the small things.',
       letter: [
-        'Ntah kamu sadar atau ngga, tapi caramu mengingatkan aku menjaga diri selalu membuatku merasa diperhatikan.',
-        '"Pake sunscreen. Jangan lupa makan." Sederhana — tapi aku selalu senang saat merasa diperhatikan.'
+        'Kamu mungkin tidak selalu menyadarinya, tapi cara kamu mengingatkan aku untuk menjaga diri sendiri membuatku merasa diperhatikan.',
+        '"Pakai sunscreen. Jangan skip makan. Makannya yang sehat. Kalau bohong, tertimpa musibah, hahaha." Simple lines — but they always landed as quiet care.'
       ]
     },
     {
       id: 'quality-2',
-      title: 'A Part of My Everyday',
-      preview: 'Lagu, cerita, hal kecil — sering bikin aku inget kamu.',
+      title: 'Your Kindness to Others',
+      preview: 'Permen untuk anak kecil, berbagi apa yang kamu punya — hatimu besar.',
       letter: [
-        'Aku gatau kapan mulainya. Tapi sekarang, banyak hal sehari-hari bikin aku ingat kamu.',
-        'Tanpa sadar, kamu sudah jadi bagian dari hari-hariku. Dan itu hal yang tidak pernah kuingin — tapi sangat menyenangkan.'
+        'Aku suka melihat sisi kamu yang mungkin tidak selalu kamu tonjolkan — baiknya ke orang lain. Memberi permen ke anak kecil, berbagi apa yang ada, hadir dengan hati yang lembut.',
+        'Itu salah satu hal yang membuatku bangga mengenalmu. Kamu tidak hanya baik ke orang yang dekat — kamu memang baik, titik.'
       ]
     },
     {
       id: 'quality-3',
-      title: 'The First Person I Want To Tell',
-      preview: 'Kabar baik, kabar biasa — orang pertama yang ingin aku ceritakan selalu kamu.',
+      title: 'The Way You Listen',
+      preview: 'Kamu tidak sekadar mendengar — kamu benar-benar hadir.',
       letter: [
-        'Ada satu orang yang selalu pertama kuingin ceritain — entah itu penting atau sepele.',
-        'Orang itu kamu. Karena setiap cerita terasa lebih hidup kalau bisa kubagi sama kamu.'
+        'Aku tidak tahu kapan mulai merasa kamu berbeda. Mungkin saat aku bicara dan kamu benar-benar mendengarkan — bukan sekadar menunggu giliran untuk menjawab.',
+        'Di tengah dunia yang sering terburu-buru, rasanya langka ada orang yang hadir seperti itu. Bersama kamu, aku merasa didengar — dan itu membuat banyak hal terasa lebih mudah.'
       ]
     },
     {
       id: 'quality-4',
-      title: 'Your Terrible Sense of Timing',
-      preview: 'Tertawa di saat paling tidak tepat — dan ntahlah, kadang aku bingung.',
+      title: 'Your Imperfections, Too',
+      preview: 'Kelebihanmu, kekuranganmu — aku suka semuanya.',
       letter: [
-        'Saat aku berusaha serius, kamu malah ketawa. Jujur sebenarnya aku bingung kenapa kamu tertawa.',
-        'Mungkin timing-mu jelek, hahaha. Tapi justru itu yang bikin banyak momen kita susah dilupakan.'
+        'Kamu punya sisi yang lucu, keras kepala, kadang timing yang bikin aku bingung, kadang hal-hal kecil yang tidak sempurna. Dan jujur? Aku suka itu juga.',
+        'Tidak hanya sisi terbaikmu. Tapi semuanya. Aku suka kamu apa adanya, lengkap dengan semua sisi itu.'
       ]
     },
     {
       id: 'quality-5',
       title: 'How You Treat Me Like a "Baby"',
-      preview: 'Dirawat, diingatkan, dibiarkan lemah sebentar — dan itu membuatku aman.',
+      preview: 'Dirawat, diingatkan, diizinkan untuk menjadi manja— dan rasanya aman.',
       letter: [
-        'Kadang kamu memperlakukanku seperti aku masih kecil. Lucu? Iya. Tapi itu yang paling kurindukan.',
-        'Di dunia yang minta kita kuat terus, punya kamu yang memperlakukan dengan lembut — itu salah satu hal yang paling aku suka.'
+        'Kadang kamu memperlakukanku seperti aku masih kecil. Lucu? Ya. Tapi juga salah satu hal yang aku suka tentang kita.',
+        'Di tengah dunia yang selalu meminta kita untuk menjadi kuat, kelembutanmu terasa seperti tempat yang tidak pernah aku temukan sebelumnya.'
       ]
-    }, {
+    },
+    {
       id: 'quality-6',
       title: 'All of You',
-      preview: 'Kelebihan, kekurangan — aku suka semuanya.',
+      preview: 'Kelebihan, kekurangan, dan semua yang di antaranya — aku bersyukur itu kamu.',
       letter: [
-        'Jujur, aku suka banyak hal dari kamu. Cara kamu peduli, cara kamu hadir, cara kamu bikin aku ketawa di saat yang salah — semuanya kecampur jadi satu.',
-        'Dan yang paling aku syukuri: aku nggak cuma suka bagian yang "bagus" aja. Kelebihanmu, kekuranganmu, semua itu kamu. Aku nggak minta versi terbaikmu aja — aku mau kamu, bersamamu, apa adanya.'
+        'Ada banyak hal yang aku suka dari kamu — cara kamu peduli, cara kamu hadir, cara kamu baik ke orang lain, bahkan hal-hal kecil yang tidak selalu sempurna.',
+        'Bukan cuma sisi terbaikmu. Semuanya. Karena justru dari semua itu, kamu jadi kamu — dan aku bersyukur enam bulan ini ada kamu di dalamnya.'
       ]
     }
   ],
@@ -234,33 +231,36 @@ const APP_CONTENT = {
   reflection: {
     label: 'Chapter Four',
     title: 'What These Six Months Mean to Me',
+    lead: 'Take your time here — no rush. This is a personal note for you.',
     paragraphs: [
-      'Enam bulan. Angkanya tidak panjang — tapi setiap harinya benar-benar kurasakan. Aku berubah: mulai lihat potensi diriku, belajar terima perbedaan kita, dan sadar justru itu yang bikin aku tau akan penerimaan.',
-      'Pelajaran terbesarnya? Tidak perlu sama, tidak perlu selalu sepakat. Cukup saling mengerti — dan itu sudah lebih dari cukup.',
-      'Yang paling berarti bukan momen besar. Tapi surat di hampers, kopi buatanmu, nyunset bareng di atap, peluk saat aku datang. Kamu membuat enam bulan ini jadi salah satu bab terindah yang pernah kutulis.'
+      'Enam bulan itu tidak terlalu lama di atas kertas — tapi aku merasakannya satu persatu. Aku bertumbuh: aku lebih melihat potensiku, belajar untuk memberi ruang untuk perbedaan kita, dan merasa nyaman saat dipahami.',
+      'Pelajaran terbesar? Kita tidak harus sama, atau setuju semua. Memahami satu sama lain cukup — dan itu lebih dari cukup.',
+      'Yang paling kuingat bukan hal besar. Surat di hampers, kopi yang kamu buat, senja di atap, setiap kali aku datang dan betapa senangnya kamu melihatku. Terimakasih sudah ada untuk aku yaa.'
     ]
   },
 
   future: {
     label: 'Chapter Five',
-    title: 'The Chapters We Haven\'t Written Yet',
+    title: 'Whatever Comes Next',
     backgroundImage: 'assets/images/chapter5-bg.jpg',
+    lead: 'No expectations — just honesty.',
     paragraphs: [
       'Bukannya tidak memiliki rencana besar — hanya harapan tenang: jadi tempat yang nyaman dan aman buat kamu.',
-      'Ngopi bareng, liat kamu cerita, jadi aku ingin itu terus ada. Jadi tolong, jaga kesehatanmu ya — biar kita bisa lakukan hal itu terus.',
-      'Aku tidak tahu bab berikutnya seperti apa. Tapi aku menantikannya — dengan hati yang tenang.'
+      'Ngopi bareng, obrolan ringan, sore yang tenang — aku ingin itu terus ada. Jadi tolong selalu dijaga kesehatannya yaa - biar kita bisa lakukan hal itu terus.',
+      'Aku tidak tahu apa yang akan terjadi di bab selanjutnya. Its okay. Aku hanya senang bahwa ini terjadi — dan meninggalkan sesuatu yang hangat di belakangnya.'
     ]
   },
 
   ending: {
     thankYou: 'Thank You.',
     lines: [
-      'For the letter in the hamper — formal, funny, and the sweetest way to say hello.',
-      'For your coffee, our sunsets on the rooftop, and every cup we shared along the way.',
-      'For every welcome when I arrived, every night you stayed when I was sick, and every time you truly listened.',
-      'For all of you — the strengths, the flaws, and six months I didn\'t just live through. I felt them. And they changed me to be better.'
+      'For the letter in the hamper — formal, funny, and unforgettable.',
+      'For your coffee, our rooftop sunsets, and every easy hour in between.',
+      'For showing up when it mattered, and for every time you really listened.',
+      'For all of you — and for six months that still make me smile when I think back.'
     ],
-    buttonText: 'Open My Last Letter'
+    buttonText: 'One Last Note',
+    buttonHint: 'A personal note — read it only when you want to.'
   },
 
   finalLetter: {
@@ -286,13 +286,13 @@ const APP_CONTENT = {
 
 const CHAPTERS = [
   { id: 'opening', label: 'Cover' },
-  { id: 'chapter-1', label: 'Awal' },
-  { id: 'chapter-2', label: 'Kenangan' },
-  { id: 'gallery', label: 'Galeri' },
-  { id: 'chapter-3', label: 'Kamu' },
-  { id: 'chapter-4', label: 'Makna' },
-  { id: 'chapter-5', label: 'Masa Depan' },
-  { id: 'ending', label: 'Akhir' }
+  { id: 'chapter-1', label: 'Start' },
+  { id: 'chapter-2', label: 'Memories' },
+  { id: 'gallery', label: 'Gallery' },
+  { id: 'chapter-3', label: 'You' },
+  { id: 'chapter-4', label: 'Meaning' },
+  { id: 'chapter-5', label: 'Next' },
+  { id: 'ending', label: 'End' }
 ];
 
 let currentMemoryIndex = 0;
@@ -307,7 +307,9 @@ const musicState = {
   audio: null,
   playing: false,
   ready: false,
-  error: false
+  error: false,
+  wasPlayingBeforeVideo: false,
+  suppressedByVideo: false
 };
 
 /* ============================================
@@ -364,6 +366,51 @@ function pauseGalleryVideo() {
   if (!video) return;
   video.pause();
   video.currentTime = 0;
+  restoreMusicAfterVideo();
+}
+
+function isGalleryVideoPlaying() {
+  const video = document.getElementById('gallery-lightbox-video');
+  return Boolean(
+    activeOverlay === 'gallery' &&
+    video &&
+    !video.hidden &&
+    !video.paused &&
+    !video.ended
+  );
+}
+
+function suppressMusicForVideo() {
+  if (musicState.suppressedByVideo) return;
+  musicState.wasPlayingBeforeVideo = musicState.playing;
+  musicState.suppressedByVideo = true;
+  if (musicState.playing) pauseMusic();
+}
+
+function restoreMusicAfterVideo() {
+  if (!musicState.suppressedByVideo) return;
+  const shouldResume = musicState.wasPlayingBeforeVideo;
+  musicState.suppressedByVideo = false;
+  musicState.wasPlayingBeforeVideo = false;
+  if (shouldResume) playMusic();
+}
+
+function bindGalleryVideoAudio() {
+  const video = document.getElementById('gallery-lightbox-video');
+  if (!video || video.dataset.audioBound) return;
+  video.dataset.audioBound = '1';
+
+  video.addEventListener('play', () => {
+    if (activeOverlay === 'gallery') suppressMusicForVideo();
+  });
+
+  video.addEventListener('pause', () => {
+    if (activeOverlay === 'gallery') restoreMusicAfterVideo();
+  });
+
+  video.addEventListener('ended', () => {
+    if (activeOverlay === 'gallery') restoreMusicAfterVideo();
+  });
 }
 
 function applyGalleryVideoVolume(video) {
@@ -406,7 +453,7 @@ function renderMemoryVisual(memory, index, context) {
   }
 
   const overlayNote = context === 'overlay'
-    ? '<p class="overlay__art-note">Tidak ada foto — tapi perasaannya tetap ada di sini.</p>'
+    ? '<p class="overlay__art-note">No photo — but the feeling is still here.</p>'
     : '';
 
   if (context === 'card') {
@@ -428,7 +475,7 @@ function renderMemoryVisual(memory, index, context) {
       ${deco}
       ${dateBadge}
       <span class="memory-art__icon" aria-hidden="true">${v.icon || '✦'}</span>
-      <span class="memory-art__tag">${v.tag || 'Kenangan tanpa foto'}</span>
+      <span class="memory-art__tag">${v.tag || 'A moment without a photo'}</span>
       <p class="memory-art__teaser">${v.teaser || ''}</p>
       ${overlayNote}
     </div>`;
@@ -451,7 +498,7 @@ function renderOpening() {
     </h1>
     <p class="cover__subtitle cover__line cover__line--3">${subtitle}</p>
     <button class="btn cover__line cover__line--4" id="begin-btn">${buttonText}</button>
-    <p class="cover__hint">Tap to start reading</p>
+    <p class="cover__hint">${APP_CONTENT.opening.hint || 'Tap to start reading'}</p>
   `;
   return section;
 }
@@ -484,24 +531,24 @@ function renderChapter2() {
   section.id = 'chapter-2';
 
   const cardsHTML = APP_CONTENT.memories.map((m, i) => `
-    <button class="memory-card${i === 0 ? ' is-active' : ''}${m.hasImage ? ' memory-card--photo' : ' memory-card--art'}" data-index="${i}" aria-label="Buka: ${m.title}">
+    <button class="memory-card${i === 0 ? ' is-active' : ''}${m.hasImage ? ' memory-card--photo' : ' memory-card--art'}" data-index="${i}" aria-label="Open: ${m.title}">
       ${renderMemoryVisual(m, i, 'card')}
       <div class="memory-card__body">
         <p class="memory-card__num">${String(i + 1).padStart(2, '0')}</p>
         <h3 class="memory-card__title">${m.title}</h3>
-        <span class="memory-card__tap">Ketuk untuk baca <span aria-hidden="true">→</span></span>
+        <span class="memory-card__tap">Tap to read <span aria-hidden="true">→</span></span>
       </div>
     </button>`).join('');
 
   const dotsHTML = APP_CONTENT.memories.map((_, i) =>
-    `<button class="slider-dot${i === 0 ? ' active' : ''}" data-dot="${i}" aria-label="Kenangan ${i + 1}"></button>`
+    `<button class="slider-dot${i === 0 ? ' active' : ''}" data-dot="${i}" aria-label="Memory ${i + 1}"></button>`
   ).join('');
 
   section.innerHTML = `
     <div class="ch2__header reveal">
       <p class="chapter-tag">Chapter Two</p>
       <h2 class="chapter-title">Moments I Keep Returning To</h2>
-      <p class="chapter-lead ch2__hint">Geser untuk melihat kenangan</p>
+      <p class="chapter-lead ch2__hint">Swipe to browse memories</p>
     </div>
     <div class="memories-track-wrap reveal" style="--d:0.1s">
       <div class="memories-track" id="memories-track">${cardsHTML}</div>
@@ -540,7 +587,7 @@ function renderGalleryThumb(item, i) {
     isVideo ? 'gallery__item--video' : '',
     isFinale ? 'gallery__item--finale' : ''
   ].filter(Boolean).join(' ');
-  const label = isVideo ? `Putar video ${i + 1}` : `Buka foto ${i + 1}`;
+  const label = isVideo ? `Play video ${i + 1}` : `Open photo ${i + 1}`;
 
   let media;
   if (isVideo) {
@@ -602,7 +649,7 @@ function renderChapter3() {
     <div class="ch3__header reveal">
       <p class="chapter-tag">Chapter Three</p>
       <h2 class="chapter-title">Things I Love About You</h2>
-      <p class="chapter-lead" style="margin:1rem auto 0">Ketuk untuk membaca →</p>
+      <p class="chapter-lead" style="margin:1rem auto 0">Tap to read →</p>
     </div>
     <div class="qualities-list">${itemsHTML}</div>
   `;
@@ -614,10 +661,12 @@ function renderChapter4() {
   const section = createElement('section', 'story-section story-section--auto ch4');
   section.id = 'chapter-4';
   const paras = c.paragraphs.map(p => `<p class="ch4__para">${p}</p>`).join('');
+  const lead = c.lead ? `<p class="chapter-lead ch4__lead">${c.lead}</p>` : '';
   section.innerHTML = `
     <div class="reveal">
       <p class="chapter-tag">${c.label}</p>
       <h2 class="chapter-title">${c.title}</h2>
+      ${lead}
     </div>
     <div class="ch4__inner">${paras}</div>
   `;
@@ -628,6 +677,7 @@ function renderChapter5() {
   const c = APP_CONTENT.future;
   const section = createElement('section', 'story-section ch5');
   section.id = 'chapter-5';
+  const lead = c.lead ? `<p class="chapter-lead ch5__lead">${c.lead}</p>` : '';
   section.innerHTML = `
     <div class="ch5__bg img-ph">
       <img src="${c.backgroundImage}" alt="" loading="lazy" onerror="this.style.display='none'">
@@ -636,6 +686,7 @@ function renderChapter5() {
     <div class="ch5__content reveal">
       <p class="chapter-tag">${c.label}</p>
       <h2 class="chapter-title">${c.title}</h2>
+      ${lead}
       <div class="ch5__text">${paragraphsToHTML(c.paragraphs)}</div>
     </div>
   `;
@@ -647,11 +698,13 @@ function renderEnding() {
   const section = createElement('section', 'story-section ending');
   section.id = 'ending';
   const linesHTML = c.lines.map(l => `<p class="ending__line">${l}</p>`).join('');
+  const hint = c.buttonHint ? `<p class="ending__hint">${c.buttonHint}</p>` : '';
   section.innerHTML = `
     <h2 class="ending__thankyou" id="ending-thankyou">${c.thankYou}</h2>
     <div class="ending__lines">${linesHTML}</div>
     <div class="ending__cta" id="ending-cta">
       <button class="btn" id="open-letter-btn">${c.buttonText}</button>
+      ${hint}
     </div>
   `;
   return section;
@@ -670,16 +723,16 @@ function createGalleryLightbox() {
     <div class="gallery-lightbox__bg" id="gallery-lightbox-bg"></div>
     <div class="gallery-lightbox__top">
       <span class="gallery-lightbox__counter" id="gallery-lightbox-counter"></span>
-      <button type="button" class="gallery-lightbox__close" id="gallery-lightbox-close" aria-label="Tutup">✕</button>
+      <button type="button" class="gallery-lightbox__close" id="gallery-lightbox-close" aria-label="Close">✕</button>
     </div>
-    <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" id="gallery-prev" aria-label="Foto sebelumnya">←</button>
+    <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" id="gallery-prev" aria-label="Previous">←</button>
     <div class="gallery-lightbox__stage">
       <div class="gallery-intro" id="gallery-intro" hidden></div>
       <img class="gallery-lightbox__img" id="gallery-lightbox-img" alt="" hidden>
       <video class="gallery-lightbox__video" id="gallery-lightbox-video"
         playsinline controls preload="metadata" hidden></video>
     </div>
-    <button class="gallery-lightbox__nav gallery-lightbox__nav--next" id="gallery-next" aria-label="Foto berikutnya">→</button>
+    <button class="gallery-lightbox__nav gallery-lightbox__nav--next" id="gallery-next" aria-label="Next">→</button>
   `;
   return el;
 }
@@ -688,6 +741,8 @@ function bindGalleryLightboxEvents() {
   const lightbox = document.getElementById('gallery-lightbox');
   if (!lightbox || lightbox.dataset.bound) return;
   lightbox.dataset.bound = '1';
+
+  bindGalleryVideoAudio();
 
   lightbox.querySelector('#gallery-lightbox-bg')?.addEventListener('click', closeGalleryLightbox);
   lightbox.querySelector('#gallery-lightbox-close')?.addEventListener('click', (e) => {
@@ -708,6 +763,7 @@ function openGalleryLightbox(index) {
 
 function closeGalleryLightbox() {
   pauseGalleryVideo();
+  restoreMusicAfterVideo();
   galleryIntroActive = false;
   galleryIntroStep = 0;
   galleryIntroNoTaps = 0;
@@ -758,7 +814,7 @@ function renderGalleryIntroStep(item) {
       ${step.badge ? `<p class="gallery-intro__badge">${step.badge}</p>` : ''}
       <h3 class="gallery-intro__title">${step.title}</h3>
       <p class="gallery-intro__text">${step.text}</p>
-      <button type="button" class="btn gallery-intro__btn" data-intro-action="next">${step.button || 'Putar'}</button>
+      <button type="button" class="btn gallery-intro__btn" data-intro-action="next">${step.button || 'Play'}</button>
     `;
   }
 
@@ -773,7 +829,7 @@ function renderGalleryIntroStep(item) {
     card.innerHTML = `
       <h3 class="gallery-intro__title">${step.title}</h3>
       <div class="gallery-intro__checks">${checksHTML}</div>
-      <button type="button" class="btn gallery-intro__btn" data-intro-action="check" disabled>${step.button || 'Lanjut'}</button>
+      <button type="button" class="btn gallery-intro__btn" data-intro-action="check" disabled>${step.button || 'Continue'}</button>
     `;
   }
 
@@ -782,8 +838,8 @@ function renderGalleryIntroStep(item) {
       <h3 class="gallery-intro__title">${step.title}</h3>
       <p class="gallery-intro__text" id="gallery-intro-confirm-text">${step.text}</p>
       <div class="gallery-intro__dual">
-        <button type="button" class="gallery-intro__ghost" data-intro-action="no">${step.no || 'Belum'}</button>
-        <button type="button" class="btn gallery-intro__btn gallery-intro__btn--sm" data-intro-action="next">${step.yes || 'Yakin'}</button>
+        <button type="button" class="gallery-intro__ghost" data-intro-action="no">${step.no || 'Not yet'}</button>
+        <button type="button" class="btn gallery-intro__btn gallery-intro__btn--sm" data-intro-action="next">${step.yes || 'Yes'}</button>
       </div>
     `;
     card.dataset.noReply = step.noReply || '';
@@ -887,7 +943,8 @@ function finishGalleryIntro(item) {
   const video = document.getElementById('gallery-lightbox-video');
   if (video && !video.hidden) {
     applyGalleryVideoVolume(video);
-    video.play().catch(() => {});
+    suppressMusicForVideo();
+    video.play().catch(() => restoreMusicAfterVideo());
   }
 }
 
@@ -1009,7 +1066,7 @@ function createMemoryOverlay() {
       </div>
       <div class="overlay__scroll" id="memory-content"></div>
       <div style="text-align:center;padding-bottom:1rem">
-        <button class="overlay__close" id="memory-close">Tutup</button>
+        <button class="overlay__close" id="memory-close">Close</button>
       </div>
     </div>
   `;
@@ -1046,7 +1103,7 @@ function updateMemoryContent() {
 
   document.getElementById('memory-content').innerHTML = `
     ${renderMemoryVisual(m, currentMemoryIndex, 'overlay')}
-    <p class="overlay__tag">Kenangan ${String(currentMemoryIndex + 1).padStart(2, '0')}</p>
+    <p class="overlay__tag">Memory ${String(currentMemoryIndex + 1).padStart(2, '0')}</p>
     <h3 class="overlay__title">${m.title}</h3>
     <div class="overlay__story">${paragraphsToHTML(m.story)}</div>
   `;
@@ -1071,7 +1128,7 @@ function createLetterOverlay() {
   el.innerHTML = `
     <div class="letter-overlay__head">
       <span class="letter-overlay__tag">${l.label}</span>
-      <button class="overlay__close" id="letter-close">Tutup</button>
+      <button class="overlay__close" id="letter-close">Close</button>
     </div>
     <div class="letter-overlay__body">
       <p class="letter-overlay__greeting">${l.greeting}</p>
@@ -1394,7 +1451,7 @@ function createMusicPlayer() {
   const el = createElement('div', 'music-player');
   el.innerHTML = `
     <button class="music-btn" id="music-btn" type="button"
-      aria-label="Putar musik latar" aria-pressed="false" title="${music.title} — ${music.artist}">
+      aria-label="Play background music" aria-pressed="false" title="${music.title} — ${music.artist}">
       <span class="music-btn__icon music-btn__icon--off" aria-hidden="true">♪</span>
       <span class="music-btn__bars" aria-hidden="true">
         <span></span><span></span><span></span>
@@ -1426,7 +1483,7 @@ function initMusic() {
     const btn = document.getElementById('music-btn');
     if (btn) {
       btn.classList.add('music-btn--error');
-      btn.title = 'File musik belum ada — simpan MP3 di assets/audio/';
+      btn.title = 'Music file missing — add lofi-ambient.mp3 to assets/audio/';
     }
   });
 
@@ -1462,12 +1519,13 @@ function updateMusicButton() {
 
   btn.classList.toggle('music-btn--playing', musicState.playing);
   btn.setAttribute('aria-pressed', musicState.playing ? 'true' : 'false');
-  btn.setAttribute('aria-label', musicState.playing ? 'Jeda musik latar' : 'Putar musik latar');
+  btn.setAttribute('aria-label', musicState.playing ? 'Pause background music' : 'Play background music');
   label?.classList.toggle('music-player__label--show', musicState.playing);
 }
 
 function playMusic() {
   if (!musicState.audio || musicState.error) return;
+  if (isGalleryVideoPlaying()) return;
   musicState.audio.play().then(() => {
     musicState.playing = true;
     updateMusicButton();
