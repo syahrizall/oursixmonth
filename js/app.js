@@ -11,14 +11,6 @@ const GALLERY_INTROS = {
       button: 'Play'
     }]
   },
-  edited: {
-    steps: [{
-      type: 'splash',
-      title: 'A Little Edit',
-      text: 'This is a short video I made for you. I hope you like it.',
-      button: 'Play'
-    }]
-  },
   finale: {
     steps: [{
       type: 'splash',
@@ -164,8 +156,6 @@ const APP_CONTENT = {
       { src: 'assets/images/Sip.jpg', alt: 'Cheers' },
       { src: 'assets/images/Sycho.PNG', alt: 'Sycho' },
       { src: 'assets/images/Tidur.jpeg', alt: 'Resting' },
-
-      { type: 'video', src: 'assets/images/edit video.mp4', alt: 'A small edit for you', introKey: 'edited' },
 
       { type: 'video', src: 'assets/images/I Love You.mp4', alt: 'I love you', finale: true, introKey: 'finale' }
     ]
@@ -564,7 +554,6 @@ function resolveGalleryIntro(item) {
   if (item.intro?.steps?.length) return item.intro;
   const file = (item.src || '').split('/').pop().toLowerCase();
   if (file.includes('i love you')) return GALLERY_INTROS.finale;
-  if (file.includes('edit video')) return GALLERY_INTROS.edited;
   if (file.includes('all video')) return GALLERY_INTROS.compilation;
   return null;
 }
