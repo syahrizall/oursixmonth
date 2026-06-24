@@ -82,19 +82,19 @@ const APP_CONTENT = {
     },
     {
       id: 'memory-2',
-      title: 'Saat Aku Tidak Enak Badan',
+      title: 'Saat Aku Sakit di Tempatmu',
       image: 'assets/images/memory-2.jpg',
       hasImage: false,
       visual: {
         icon: '♡',
         tag: 'Dirawat dengan lembut',
         date: '23 Jan 2026',
-        teaser: 'Aku sedang tidak enak badan — dan kamu ada di sampingku malam itu, dengan halus.',
+        teaser: 'Aku sedang sakit di tempatmu — dan kamu ada di sampingku malam itu, dengan halus.',
         theme: 'care'
       },
       story: [
-        '23 Januari 2026. Aku sedang tidak enak badan. Aku ingat kamu yang mengurusku — kompres hangat, menemani sampai aku bisa tertidur, dan melakukan apa pun yang kubutuhkan, saat aku sadar maupun tidak.',
-        'Yang paling kuingat bukan sakitnya. Tapi cara kamu mengurusku dengan halus malam itu — pelan, sabar, tanpa membuatku merasa menjadi beban. I hope you know how much I appreciate it.'
+        '23 Januari 2026. Aku sedang sakit saat aku main ke tempatmu. Aku ingat kamu yang mengurusku — kompres hangat, menemani sampai aku bisa tertidur, dan melakukan apa pun yang kubutuhkan, saat aku sadar maupun tidak.',
+        'Yang paling kuingat bukan sakitnya. Tapi cara kamu mengurusku dengan lembut malam itu — pelan, sabar, tanpa membuatku merasa menjadi beban. I hope you know how much I appreciate it.'
       ]
     },
     {
